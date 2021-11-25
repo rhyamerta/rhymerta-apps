@@ -11,28 +11,39 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
     <title>RHY Amerta Development</title>
 
     <style>
+
+        body{
+            font-family: 'Josefin Sans', sans-serif;
+            background-image:url(../image/bg.jpg);
+            background-size:cover;
+        }
 
         .row{
             padding-top: 50px;
         }
         .kotak1{
-            height: 800px;
-            background-color: #0093E9;
-            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            padding-top:20px;
             margin:auto;
             
         }
 
         .kotak2{
-            height: 500px;
-            background-color: #85FFBD;
-            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            padding-top:20px;
+            padding-bottom:20px;
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
             margin:auto;
             width : 80%;
-            
+            text-align:center;
+            border-radius:10px;
         }
 
         .kotak2 , hr{
@@ -54,12 +65,29 @@
 
 
         .kotak3{
-            height:300px;
+            /* height:300px;
             background-color: #FF9A8B;
-            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); */
             margin: auto;
             width:80%;
             
+        }
+
+        #pass, #btn-login, #btn-cancel{
+            margin-top:15px;
+        }
+
+        #btn-login, #btn-cancel{
+            width:100%;
+        }
+
+        #btn-cancel{
+            margin-top:5px;
+        }
+
+        #link-register{
+            font-size:15px;
+            color:blue;
         }
     </style>
 
@@ -70,9 +98,10 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div class="kotak1">
-                <h4>kotak1</h4>
+                <!-- <h4>kotak1</h4> -->
                 <div class="kotak2">
-                    <h4>kotak2</h4>
+                    <br>
+                    <!-- <h4>kotak2</h4> -->
                         <div class="textwelcome">
                             Welcome To 
                             <br>
@@ -84,7 +113,19 @@
                         </div>
 
                     <div class="kotak3">
-                        <h4>kotak3 </h4>
+                        <!-- <h4>kotak3 </h4> -->
+                        <br>
+                        <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="username">
+                                    <input type="password" class="form-control" placeholder="password" id="pass">
+                                    <a class="btn btn-primary" href="#" role="button" id="btn-login">Login</a>
+                                    <a class="btn btn-danger" href="#" role="button" id="btn-cancel">Cancel</a>
+                                    <br><br>
+                                    <a href="" id="link-register">Sign Up</a>
+                                    
+                                </div>
+                            </form>
                     </div>
                 </div>
             </div>
